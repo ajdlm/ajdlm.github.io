@@ -1,7 +1,8 @@
 $theme-colors: (
     "info": #4aaaa5,
     "dark": #cccccc,
-    "primary": #777777
+    "primary": #777777,
+    "secondary": #dddddd
 );
 
 $border-width: 2px;
@@ -13,7 +14,3 @@ $headings-font-weight: bold;
 $headings-font-family: 'Georgia', Times, Times New Roman, serif;
 
 @import "node_modules/bootstrap/scss/bootstrap";
-
-.body-background {
-    background-image: url("../images/background.png") repeat center center;
-}
