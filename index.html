@@ -5,87 +5,101 @@
   <meta charset="UTF-8">
   <title>Antonio de las Morenas</title>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
   <!--Linking our Bootstrap .css file, which is modified by a .scss file of the same name (custom.scss)-->
   <link rel="stylesheet" href="custom.css">
 
+
+
   <style>
+    html,
+    body {
+      height: 100%;
+    }
+
     body {
       background-image: url("assets/images/background.png");
+    }
+
+    #not-footer {
+      flex: 1 0 auto;
+    }
+
+    #sticky-footer {
+      flex-shrink: none;
     }
   </style>
 </head>
 
-<body style="">
-  <!--<div class="row border-bottom border-dark bg-white">
-        <div class="col-md-1"></div>
-
-        <div class="col-md-4 text-white bg-info">
-            <h2 class="px-1 py-4 text-center">Antonio de las Morenas</h1>
+<body class="d-flex flex-column">
+  <div id="not-footer">
+    <nav class="navbar navbar-expand-md navbar-light border-bottom border-dark bg-white p-0">
+      <div class="container px-0">
+        <span class="navbar-brand m-0 bg-info p-3">
+          <h2 class="text-white">Antonio de las Morenas</h2>
+        </span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#pageLinks"
+          aria-controls="pageLinks" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="pageLinks">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-primary py-0 my-2 pr-3 border-right border-dark"
+                style="border-width: 1px !important" href="index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary py-0 my-2 px-md-3 border-right border-dark"
+                style="border-width: 1px !important" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary pl-md-3 pr-0" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
 
-        <div class="col-md-5 text-center my-auto">
-            <ul class="list-inline my-3">
-                <li class="list-inline-item pr-3 border-right border-dark"><a href="index.html">About</a></li>
-                <li class="list-inline-item pl-1 pr-3 border-right border-dark"><a href="portfolio.html">Portfolio</a></li>
-                <li class="list-inline-item"><a href="contact.html">Contact</a></li>
-            </ul>
+    <div class="container bg-white">
+      <div class="row mt-4 mb-5">
+        <div class="col-md-12 border border-secondary">
+
+          <h2 class="text-info mx-3 py-4 border-bottom border-secondary" style="border-width: 3px !important">About Me
+          </h2>
+
+          <div class="float-left ml-3 mr-4 my-4">
+            <img src="assets/images/profile-picture.jpg" alt="profile picture" />
+          </div>
+
+          <p class="text-primary mx-3 mt-4" style="line-height: 2">I'm an ESL teacher currently looking to become a web
+            developer. I've dabbled with
+            scripting
+            for
+            a computer game in the past, so I know that I enjoy both the creativity and the logic that
+            goes
+            into coding, as well as the "eureka" moments that come when I figure out how to perform
+            a particularly daunting task.</p>
+
+          <p class="text-primary mx-3 mb-5" style="line-height: 2">Despite that, however, I'd still very much
+            characterize
+            myself as a beginner, both because
+            the only coding I've done has been relatively basic, and because it's been more than a year
+            now
+            since I've worked on scripts for the aforementioned game. Still, the memory of that
+            experience
+            and the prospect of a career change have me very excited to learn how to code.</p>
         </div>
-
-        <div class="col-md-1"></div>
-    </div>-->
-
-  <nav class="navbar navbar-expand-md navbar-light border-bottom border-dark bg-white static-top p-0">
-    <div class="container px-0">
-      <span class="navbar-brand m-0 bg-info p-3">
-        <h2 class="text-white">Antonio de las Morenas</h2>
-      </span>
-      <!--Here there be monsters...-->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <!--Fully understand everything happening beneath here :D-->
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link text-primary py-0 my-2 pr-3 border-right border-dark" href="index.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-primary py-0 my-2 px-3 border-right border-dark" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-primary pl-3 pr-0" href="contact.html">Contact</a>
-          </li>
-        </ul>
       </div>
     </div>
-  </nav>
+  </div>
 
-  <div class="container bg-white">
-    <div class="row mt-4">
-      <div class="col-md-12 border border-secondary">
-
-        <h2 class="text-info mx-3 py-4 border-bottom border-secondary">About Me</h2>
-
-        <div class="float-left ml-3 mr-4 my-4">
-          <img src="assets/images/profile-picture.jpg" alt="profile picture" />
-        </div>
-
-        <p class="text-primary mx-3 mt-4" style="line-height: 2">I'm an ESL teacher currently looking to become a web developer. I've dabbled with
-          scripting
-          for
-          a computer game in the past, so I know that I enjoy both the creativity and the logic that
-          goes
-          into coding, as well as the "eureka" moments that come when I figure out how to perform
-          a particularly daunting task.</p>
-
-        <p class="text-primary mx-3 mb-5" style="line-height: 2">Despite that, however, I'd still very much characterize myself as a beginner, both because
-          the only coding I've done has been relatively basic, and because it's been more than a year
-          now
-          since I've worked on scripts for the aforementioned game. Still, the memory of that
-          experience
-          and the prospect of a career change have me very excited to learn how to code.</p>
-      </div>
+  <footer id="sticky-footer" class="footer mt-auto py-4 bg-danger border-top border-info"
+    style="border-width: 8px !important">
+    <p class="text-center text-secondary m-0 py-2" style="font-size: 11px">Copyright © 2019</p>
+  </footer>
 </body>
 
 </html>
