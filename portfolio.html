@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Antonio de las Morenas</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!--Linking our Bootstrap .css file, which is modified by a .scss file of the same name (custom.scss)-->
+    <link rel="stylesheet" href="custom.css">
+
+
+
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background-image: url("assets/images/background.png");
+        }
+
+        #not-footer {
+            flex: 1 0 auto;
+        }
+
+        #sticky-footer {
+            flex-shrink: none;
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column">
+    <div id="not-footer">
+        <nav class="navbar navbar-expand-md navbar-light border-bottom border-dark bg-white p-0">
+            <div class="container px-0">
+                <span class="navbar-brand m-0 bg-info p-3">
+                    <h2 class="text-white">Antonio de las Morenas</h2>
+                </span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#pageLinks"
+                    aria-controls="pageLinks" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="pageLinks">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-primary py-0 my-2 pr-3 border-right border-dark"
+                                style="border-width: 1px !important" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary py-0 my-2 px-md-3 border-right border-dark"
+                                style="border-width: 1px !important" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary pl-md-3 pr-0" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container bg-white">
+            <div class="row mt-4 mb-5">
+                <div class="col-md-12 border border-secondary">
+
+                    <h2 class="text-info mx-3 py-4 border-bottom border-secondary" style="border-width: 3px !important">
+                        Portfolio
+                    </h2>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mx-3 my-4">
+                                <img class="img-fluid w-100" src="assets/images/project-1-picture.jpg" alt="profile picture" />
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="mx-3 my-4 positon-relative">
+                                <img class="img-fluid w-100" src="assets/images/project-2-picture.jpg" alt="profile picture" />
+
+                                <h2 class="position-absolute mb-7">Project 2</h2>
+                                <!--<div class="carousel-caption">
+                                        <h2 class="py-3 bg-info px-15">Project 2</h2>
+                                    </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="sticky-footer" class="footer mt-auto py-4 bg-danger border-top border-info"
+        style="border-width: 8px !important">
+        <p class="text-center text-secondary m-0 py-2" style="font-size: 11px">Copyright © 2019</p>
+    </footer>
+</body>
+
+</html>
