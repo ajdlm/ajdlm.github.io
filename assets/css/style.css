@@ -11,6 +11,15 @@ body {
     flex: 1 0 auto;
 }
 
+#contactStuff {
+    background-image: url("../images/small-bg-2.png");
+    height: calc(100% - 48px);
+}
+
+#contactLinkedIn {
+    font-size: 35px;
+}
+
 .modal-content {
     border: none !important;
 }
@@ -26,6 +35,16 @@ body {
 
 .linkImage:hover {
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 780px) {
+    #contactStuff {
+        margin: 0 31px 32px 16px !important;
+    }
+
+    #entireForm {
+        padding-bottom: 20px !important;
+    }
 }
 
 @media screen and (max-width: 575px) {

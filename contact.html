@@ -11,6 +11,8 @@
     <!--Linking our Bootstrap .css file, which is modified by a .scss file of the same name (custom.scss)-->
     <link rel="stylesheet" href="custom.css">
 
+    <link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -53,14 +55,13 @@
         </nav>
 
         <div class="container bg-white">
-            <div class="row mt-4 mb-5">
-                <div id="mainArea" class="col-md-12 border border-secondary">
-
+            <div id="mainArea" class="row mt-4 mb-5 border border-secondary">
+                <div class="col-md-7 col-lg-8">
                     <h2 class="text-info mx-3 py-4 mb-4 border-bottom border-secondary"
                         style="border-width: 3px !important;">Contact
                     </h2>
 
-                    <form class="text-primary px-3 pt-1 pb-4" style="font-size: 18px; line-height: 1;">
+                    <form id="entireForm" class="text-primary px-3 pt-1 pb-4" style="font-size: 18px; line-height: 1;">
                         <div class="form-group pb-1">
                             <label for="inputName">Name</label>
                             <input type="text" class="form-control" id="inputName" placeholder="John Smith">
@@ -80,22 +81,36 @@
                             style="font-size: 18px;">Submit</button>
                     </form>
                 </div>
+
+                <div class="col-md-5 col-lg-4 pr-0">
+                    <div id="contactStuff" class="my-4 mr-4 px-4 py-4">
+                        <h6 class="text-info">Email</h6>
+                        <a href="mailto: a.j.delasmorenas@gmail.com">a.j.delasmorenas@gmail.com</a>
+
+                        <h6 class="text-info pt-4">Telephone</h6>
+                        <p class="text-primary mb-4">774-534-0815</p>
+
+                        <a href="https://www.linkedin.com/in/antoniodelasmorenas/" target="_blank">
+                            <i id="contactLinkedIn" class="fab fa-linkedin text-info linkImage"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <footer class="footer mt-auto py-4 bg-danger border-top border-info text-center"
-    style="border-width: 8px !important;">
-    <a href="https://github.com/ajdlm" target="_blank">
-      <img src="assets/images/GitHub-Mark-Light.png" alt="GitHub" class="mr-2 mb-2 linkImage">
-    </a>
+        style="border-width: 8px !important;">
+        <a href="https://github.com/ajdlm" target="_blank">
+            <img src="assets/images/GitHub-Mark-Light.png" alt="GitHub" class="mr-2 mb-2 linkImage">
+        </a>
 
-    <a href="https://www.linkedin.com/in/antoniodelasmorenas/" target="_blank">
-      <img src="assets/images/LinkedIn-Logo.png" alt="LinkedIn" height="32px" class="mb-2 linkImage">
-    </a>
+        <a href="https://www.linkedin.com/in/antoniodelasmorenas/" target="_blank">
+            <img src="assets/images/LinkedIn-Logo.png" alt="LinkedIn" height="32px" class="mb-2 linkImage">
+        </a>
 
-    <p class="text-center text-secondary m-0 pt-2" style="font-size: 11px;">Copyright © 2019</p>
-  </footer>
+        <p class="text-center text-secondary m-0 pt-2" style="font-size: 11px;">Copyright © 2019</p>
+    </footer>
 </body>
 
 </html>
