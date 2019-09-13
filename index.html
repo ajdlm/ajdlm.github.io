@@ -2,31 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-    <title>Contact</title>
+  <title>Antonio de las Morenas</title>
 
-    <meta name="viewport" content="width-device-width, initial-scale=1">
+  <meta name="viewport" content="width-device-width, initial-scale=1">
 
-    <!--Linking our Bootstrap .css file, which is modified by a .scss file of the same name (custom.scss)-->
-    <link rel="stylesheet" href="custom.css">
+  <!--Linking our Bootstrap .css file, which is modified by a .scss file of the same name (custom.scss)-->
+  <link rel="stylesheet" href="custom.css">
 
-    <link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+  <link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <script src="assets/javascript/portfolio.js"></script>
+  <script src="assets/javascript/portfolio.js"></script>
 </head>
 
 <body class="d-flex flex-column">
   <div id="not-footer">
     <nav class="navbar navbar-expand-md navbar-light border-bottom border-dark bg-white p-0">
-      <div class="container px-0">
+      <div id="headerContainer" class="container px-0">
         <div class="navbar-brand m-0 bg-info p-3">
           <h2 id="brandText" class="text-white mb-0">Antonio de las Morenas</h2>
         </div>
@@ -35,19 +35,30 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="pageLinks">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link text-primary py-0 my-2" href="index.html">About<span
-                  class="pr-3 d-none d-md-inline border-right border-dark"
-                  style="border-width: 1px !important;"></span></a>
+          <ul class="navbar-nav ml-md-auto py-2 py-md-0">
+            <li class="nav-item ml-auto">
+              <a class="nav-link text-primary py-0 pr-2 my-2" href="index.html"><i class="fas fa-home"></i>
+                <p class="aboutFont d-none">About</p><span class="pr-3 d-inline border-right border-dark"
+                  style="border-width: 1px !important;"></span>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary py-0 my-2" href="portfolio.html">Portfolio<span
-                  class="pr-3 d-none d-md-inline border-right border-dark"
-                  style="border-width: 1px !important;"></span></a>
+              <a class="nav-link text-primary py-0 px-2 my-2" href="portfolio.html"><i class="fas fa-folder-open"></i>
+                <p class="portfolioFont d-none">Portfolio</p><span
+                  class="pr-3 d-inline border-right border-dark" style="border-width: 1px !important;"></span>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-primary pr-0" href="contact.html">Contact</a>
+              <a class="nav-link text-primary py-0 px-2 my-2" href="contact.html"><i class="fas fa-phone"></i>
+                <p class="contactFont d-none mb-0">Contact</p><span
+                  class="pr-3 d-inline border-right border-dark" style="border-width: 1px !important;"></span>
+              </a>
+            </li>
+            <li class="nav-item mr-auto">
+              <a class="nav-link text-primary pr-0 pl-2" href="assets/delasMorenas_Antonio_Resume.pdf" target="_blank"><i
+                  class="fas fa-file"></i>
+                <p class="resumeFont d-none mb-0">Resume</p>
+              </a>
             </li>
           </ul>
         </div>

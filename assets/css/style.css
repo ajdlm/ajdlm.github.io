@@ -20,6 +20,11 @@ body {
     font-size: 35px;
 }
 
+.navbar-nav {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
 .modal-content {
     border: none !important;
 }
@@ -37,7 +42,13 @@ body {
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 767px) {
+    #headerContainer {
+        min-width: 100%;
+        margin: 0 !important;
+        background: #4aaaa5;
+    }
+
     #contactStuff {
         margin: 0 31px 32px 16px !important;
     }
@@ -45,11 +56,30 @@ body {
     #entireForm {
         padding-bottom: 20px !important;
     }
+
+    .navbar-toggler {
+        margin-right: 16px;
+    }
+
+    .navbar-brand {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar-nav {
+        background: #666666;
+        width: 100%;
+    }
+
+    .nav-link {
+        color: white !important;
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 575px) {
-    #brandText {
-        font-size: 1.25rem;
+    #brandText, h2 {
+        font-size: 1.75rem;
     }
 
     #mainArea {
@@ -58,8 +88,14 @@ body {
     }
 }
 
+@media screen and (max-width: 447px) {
+    #brandText, h2 {
+        font-size: 1.3rem;
+    }
+}
+
 @media screen and (max-width: 359px) {
-    #brandText {
-        font-size: 1.05rem;
+    #brandText, h2 {
+        font-size: 1.07rem;
     }
 }
