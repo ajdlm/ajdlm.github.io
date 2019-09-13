@@ -3,29 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Antonio de las Morenas</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Portfolio</title>
 
     <!--Linking our Bootstrap .css file, which is modified by a .scss file of the same name (custom.scss)-->
     <link rel="stylesheet" href="custom.css">
 
-    <style>
-        html,
-        body {
-            height: 100%;
-        }
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-        body {
-            background-image: url("assets/images/background.png");
-        }
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-        #not-footer {
-            flex: 1 0 auto;
-        }
-    </style>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="assets/javascript/portfolio.js"></script>
 </head>
 
 <body class="d-flex flex-column">
@@ -71,23 +62,37 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="mx-3 my-4">
-                                <img class="img-fluid w-100" src="assets/images/project-1-picture.jpg"
-                                    alt="profile picture" />
+                                <img class="portfolio-picture img-fluid w-100" src="assets/images/star-wars-hangman.png"
+                                    alt="profile picture" data-name="Star Wars Hangman"
+                                    data-deployed="https://ajdlm.github.io/Word-Guess-Game/"
+                                    data-repo="https://github.com/ajdlm/Word-Guess-Game" />
                             </div>
 
                             <div class="carousel-caption container-fluid" style="left: 0; bottom: 0;">
-                                <h3 class="py-3 mb-2 mx-3 bg-info font-weight-normal">Project 1</h3>
+                                <h4 class="py-3 mb-2 mx-3 bg-info font-weight-normal portfolio-title"
+                                    data-name="Star Wars Hangman"
+                                    data-deployed="https://ajdlm.github.io/Word-Guess-Game/"
+                                    data-repo="https://github.com/ajdlm/Word-Guess-Game">Star Wars Hangman
+                                </h4>
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="mx-3 my-4">
                                 <div>
-                                    <img class="img-fluid w-100" src="assets/images/project-2-picture.jpg"
-                                        alt="profile picture" />
+                                    <img class="portfolio-picture img-fluid w-100"
+                                        src="assets/images/fullmetal-alchemist-rpg.jpg" alt="profile picture"
+                                        data-name="Fullmetal Alchemist RPG"
+                                        data-deployed="https://ajdlm.github.io/unit-4-game/"
+                                        data-repo="https://github.com/ajdlm/unit-4-game" />
 
                                     <div class="carousel-caption container-fluid" style="left: 0; bottom: 0;">
-                                        <h3 class="py-3 mb-2 mx-3 bg-info font-weight-normal">Project 2</h3>
+                                        <h4 class="portfolio-title py-3 mb-2 mx-3 bg-info font-weight-normal"
+                                            data-name="Fullmetal Alchemist RPG"
+                                            data-deployed="https://ajdlm.github.io/unit-4-game/"
+                                            data-repo="https://github.com/ajdlm/unit-4-game">Fullmetal
+                                            Alchemist RPG
+                                        </h4>
                                     </div>
                                 </div>
                             </div>
@@ -97,23 +102,35 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="mx-3 my-4">
-                                <img class="img-fluid w-100" src="assets/images/project-3-picture.jpg"
-                                    alt="profile picture" />
+                                <img class="portfolio-picture img-fluid w-100"
+                                    src="assets/images/edgar-the-peaceable.jpg" alt="profile picture"
+                                    data-name="Anglo-Saxon Trivia Quiz"
+                                    data-deployed="https://ajdlm.github.io/Trivia-Game/"
+                                    data-repo="https://github.com/ajdlm/Trivia-Game" />
                             </div>
 
                             <div class="carousel-caption container-fluid" style="left: 0; bottom: 0;">
-                                <h3 class="py-3 mb-2 mx-3 bg-info font-weight-normal">Project 3</h3>
+                                <h4 class="portfolio-title py-3 mb-2 mx-3 bg-info font-weight-normal"
+                                    data-name="Anglo-Saxon Trivia Quiz"
+                                    data-deployed="https://ajdlm.github.io/Trivia-Game/"
+                                    data-repo="https://github.com/ajdlm/Trivia-Game">Anglo-Saxon Trivia
+                                    Quiz</h4>
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="mx-3 my-4">
                                 <div>
-                                    <img class="img-fluid w-100" src="assets/images/project-4-picture.jpg"
-                                        alt="profile picture" />
+                                    <img class="portfolio-picture img-fluid w-100" src="assets/images/blade-runner.jpg"
+                                        alt="profile picture" data-name="Sci-Fi Movie Gif Search"
+                                        data-deployed="https://ajdlm.github.io/Gif-Search/"
+                                        data-repo="https://github.com/ajdlm/Gif-Search" />
 
                                     <div class="carousel-caption container-fluid" style="left: 0; bottom: 0;">
-                                        <h3 class="py-3 mb-2 mx-3 bg-info font-weight-normal">Project 4</h3>
+                                        <h4 class="portfolio-title py-3 mb-2 mx-3 bg-info font-weight-normal"
+                                            data-name="Sci-Fi Movie Gif Search"
+                                            data-deployed="https://ajdlm.github.io/Gif-Search/"
+                                            data-repo="https://github.com/ajdlm/Gif-Search">Sci-Fi Movie Gif Search</h4>
                                     </div>
                                 </div>
                             </div>
@@ -123,12 +140,32 @@
                     <div class="row mb-4">
                         <div class="col-md-6">
                             <div class="mx-3 my-4">
-                                <img class="img-fluid w-100" src="assets/images/project-5-picture.jpg"
-                                    alt="profile picture" />
+                                <img class="portfolio-picture img-fluid w-100" src="assets/images/rps-multiplayer.jpg"
+                                    alt="profile picture" data-name="Rock, Paper, Scissors Online"
+                                    data-deployed="https://ajdlm.github.io/RPS-Multiplayer/"
+                                    data-repo="https://github.com/ajdlm/RPS-Multiplayer" />
                             </div>
 
                             <div class="carousel-caption container-fluid" style="left: 0; bottom: 0;">
-                                <h3 class="py-3 mb-2 mx-3 bg-info font-weight-normal">Project 5</h3>
+                                <h4 class="portfolio-title py-3 mb-2 mx-3 bg-info font-weight-normal"
+                                    data-name="Rock, Paper, Scissors Online"
+                                    data-deployed="https://ajdlm.github.io/RPS-Multiplayer/"
+                                    data-repo="https://github.com/ajdlm/RPS-Multiplayer">RPS Online</h4>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="mx-3 my-4">
+                                <img class="portfolio-picture img-fluid w-100" src="assets/images/food-mood.jpg"
+                                    alt="profile picture" data-name="FoodMood"
+                                    data-deployed="https://ajdlm.github.io/FoodMood/"
+                                    data-repo="https://github.com/ajdlm/FoodMood" />
+                            </div>
+
+                            <div class="carousel-caption container-fluid" style="left: 0; bottom: 0;">
+                                <h4 class="portfolio-title py-3 mb-2 mx-3 bg-info font-weight-normal"
+                                    data-name="FoodMood" data-deployed="https://ajdlm.github.io/Food-Mood/"
+                                    data-repo="https://github.com/ajdlm/Food-Mood">FoodMood</h4>
                             </div>
                         </div>
                     </div>
@@ -137,8 +174,26 @@
         </div>
     </div>
 
-    <footer class="footer mt-auto py-4 bg-danger border-top border-info"
-        style="border-width: 8px !important;">
+    <div class="modal" id="project-info" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white border-dark">
+                    <h4 class="modal-title font-weight-normal" id="dynamic-title"></h4>
+                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body" id="dynamic-description"></div>
+
+                <div class="modal-footer border-dark" id="project-info-footer">
+                    <button type="button" class="btn text-white bg-info popupClose" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-4 bg-danger border-top border-info" style="border-width: 8px !important;">
         <p class="text-center text-secondary m-0 py-2" style="font-size: 11px;">Copyright © 2019</p>
     </footer>
 </body>
