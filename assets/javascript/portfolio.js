@@ -8,7 +8,7 @@ $(document).ready(function () {
 
         $("#dynamic-title").text(projName);
 
-        $("#dynamic-description").html("<strong>Deployed App:</strong> <a href='" + projDeployed + "'>" + projDeployed + "</a><br /><strong>GitHub Repository:</strong> <a href='" + projRepo + "'>" + projRepo + "</a>");
+        $("#dynamic-description").html("<strong>Deployed App:</strong> <a href='" + projDeployed + "' target='_blank'>" + projDeployed + "</a><br /><strong>GitHub Repository:</strong> <a href='" + projRepo + "' target='_blank'>" + projRepo + "</a>");
 
         $("#project-info").modal("show");
     }
