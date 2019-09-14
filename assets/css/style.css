@@ -41,6 +41,10 @@ body {
     cursor: pointer;
 }
 
+.portfolio-title {
+    margin-bottom: 12px !important;
+}
+
 .linkImage {
     cursor: pointer;
     transition: all .2s ease-in-out;
