@@ -1,313 +1,526 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
 
     <title>Portfolio</title>
 
-    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <meta name="viewport" content="width-device-width, initial-scale=1" />
 
     <!--Linking our Bootstrap .css file, which is modified by a .scss file of the same name (custom.scss)-->
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="custom.css" />
 
-    <link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
+    />
 
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <script src="assets/javascript/portfolio.js"></script>
-</head>
+  </head>
 
-<body class="d-flex flex-column">
+  <body class="d-flex flex-column">
     <div id="not-footer">
-        <nav class="navbar navbar-expand-md navbar-dark border-bottom border-dark bg-white p-0">
-            <div id="headerContainer" class="container px-0">
-                <div class="navbar-brand m-0 bg-info p-3">
-                    <h2 id="brandText" class="text-white mb-0">Antonio de las Morenas</h2>
-                </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#pageLinks"
-                    aria-controls="pageLinks" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="pageLinks">
-                    <ul class="navbar-nav ml-md-auto py-2 py-md-0">
-                        <li class="nav-item ml-auto">
-                            <a class="nav-link text-primary py-0 pr-2 my-2" href="index.html"><i
-                                    class="fas fa-home"></i>
-                                <p class="aboutFont d-none">About</p><span
-                                    class="pr-3 d-inline border-right border-dark"
-                                    style="border-width: 1px !important;"></span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary py-0 px-2 my-2" href="portfolio.html"><i
-                                    class="fas fa-folder-open"></i>
-                                <p class="portfolioFont d-none">Portfolio</p><span
-                                    class="pr-3 d-inline border-right border-dark"
-                                    style="border-width: 1px !important;"></span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary py-0 px-2 my-2" href="contact.html"><i
-                                    class="fas fa-phone"></i>
-                                <p class="contactFont d-none mb-0">Contact</p><span
-                                    class="pr-3 d-inline border-right border-dark"
-                                    style="border-width: 1px !important;"></span>
-                            </a>
-                        </li>
-                        <li class="nav-item mr-auto">
-                            <a class="nav-link text-primary py-0 pr-0 pl-2 my-2"
-                                href="assets/delasMorenas_Antonio_Resume.pdf" target="_blank"><i
-                                    class="fas fa-file"></i>
-                                <p class="resumeFont d-none mb-0">Resume</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <div class="container bg-white">
-            <div class="row mt-4 mb-5">
-                <div id="mainArea" class="col-md-12 border border-secondary">
-
-                    <h2 class="text-info mx-3 py-4 mb-3 border-bottom border-secondary"
-                        style="border-width: 3px !important;">
-                        Portfolio
-                    </h2>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="mx-3 my-4">
-                                <img class="portfolio-picture img-fluid w-100" src="assets/images/star-wars-hangman.jpg"
-                                    alt="profile picture" data-name="Star Wars Hangman"
-                                    data-deployed="https://ajdlm.github.io/star-wars-hangman/"
-                                    data-repo="https://github.com/ajdlm/star-wars-hangman" />
-                            </div>
-
-                            <div class="carousel-caption container-fluid" style="left: 0; bottom: 0;">
-                                <h4 class="py-3 mx-3 bg-info font-weight-normal portfolio-title"
-                                    data-name="Star Wars Hangman"
-                                    data-deployed="https://ajdlm.github.io/star-wars-hangman/"
-                                    data-repo="https://github.com/ajdlm/star-wars-hangman">Star Wars Hangman
-                                </h4>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="mx-3 my-4">
-                                <div>
-                                    <img class="portfolio-picture img-fluid w-100"
-                                        src="assets/images/fullmetal-alchemist-rpg.jpg" alt="profile picture"
-                                        data-name="Fullmetal Alchemist RPG"
-                                        data-deployed="https://ajdlm.github.io/fma-rpg-battle/"
-                                        data-repo="https://github.com/ajdlm/fma-rpg-battle" />
-
-                                    <div class="carousel-caption container-fluid" style="left: 0; bottom: 0;">
-                                        <h4 class="portfolio-title py-3 mx-3 bg-info font-weight-normal"
-                                            data-name="Fullmetal Alchemist RPG"
-                                            data-deployed="https://ajdlm.github.io/fma-rpg-battle/"
-                                            data-repo="https://github.com/ajdlm/fma-rpg-battle">Fullmetal
-                                            Alchemist RPG
-                                        </h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="mx-3 my-4">
-                                <img class="portfolio-picture img-fluid w-100"
-                                    src="assets/images/edgar-the-peaceable.jpg" alt="profile picture"
-                                    data-name="Anglo-Saxon Trivia Quiz"
-                                    data-deployed="https://ajdlm.github.io/anglo-saxon-trivia/"
-                                    data-repo="https://github.com/ajdlm/anglo-saxon-trivia" />
-                            </div>
-
-                            <div class="carousel-caption container-fluid" style="left: 0; bottom: 0;">
-                                <h4 class="portfolio-title py-3 mx-3 bg-info font-weight-normal"
-                                    data-name="Anglo-Saxon Trivia Quiz"
-                                    data-deployed="https://ajdlm.github.io/anglo-saxon-trivia/"
-                                    data-repo="https://github.com/ajdlm/anglo-saxon-trivia">Anglo-Saxon Trivia
-                                    Quiz</h4>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="mx-3 my-4">
-                                <div>
-                                    <img class="portfolio-picture img-fluid w-100" src="assets/images/blade-runner.jpg"
-                                        alt="profile picture" data-name="Sci-Fi Movie Gif Search"
-                                        data-deployed="https://ajdlm.github.io/sci-fi-movie-gifs/"
-                                        data-repo="https://github.com/ajdlm/sci-fi-movie-gifs" />
-
-                                    <div class="carousel-caption container-fluid" style="left: 0; bottom: 0;">
-                                        <h4 class="portfolio-title py-3 mx-3 bg-info font-weight-normal"
-                                            data-name="Sci-Fi Movie Gif Search"
-                                            data-deployed="https://ajdlm.github.io/sci-fi-movie-gifs/"
-                                            data-repo="https://github.com/ajdlm/sci-fi-movie-gifs">Sci-Fi Movie Gif
-                                            Search</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="mx-3 my-4">
-                                <img class="portfolio-picture img-fluid w-100" src="assets/images/rps-multiplayer.jpg"
-                                    alt="profile picture" data-name="Rock, Paper, Scissors Online"
-                                    data-deployed="https://ajdlm.github.io/rps-online/"
-                                    data-repo="https://github.com/ajdlm/rps-online" />
-                            </div>
-
-                            <div class="carousel-caption container-fluid" style="left: 0; bottom: 0;">
-                                <h4 class="portfolio-title py-3 mx-3 bg-info font-weight-normal"
-                                    data-name="Rock, Paper, Scissors Online"
-                                    data-deployed="https://ajdlm.github.io/rps-online/"
-                                    data-repo="https://github.com/ajdlm/rps-online">RPS Online</h4>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="mx-3 my-4">
-                                <img class="portfolio-picture img-fluid w-100" src="assets/images/food-mood.jpg"
-                                    alt="profile picture" data-name="FoodMood"
-                                    data-deployed="https://ajdlm.github.io/FoodMood/"
-                                    data-repo="https://github.com/ajdlm/FoodMood" />
-                            </div>
-
-                            <div class="carousel-caption container-fluid" style="left: 0; bottom: 0;">
-                                <h4 class="portfolio-title py-3 mx-3 bg-info font-weight-normal" data-name="FoodMood"
-                                    data-deployed="https://ajdlm.github.io/Food-Mood/"
-                                    data-repo="https://github.com/ajdlm/Food-Mood">FoodMood</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="mx-3 my-4">
-                                <img class="portfolio-picture img-fluid w-100" src="assets/images/liri-bot.jpg"
-                                    alt="profile picture" data-name="LIRI Bot" data-deployed="not available"
-                                    data-repo="https://github.com/ajdlm/liri-node-app" />
-                            </div>
-
-                            <div class="carousel-caption container-fluid" style="left: 0; bottom: 0;">
-                                <h4 class="portfolio-title py-3 mx-3 bg-info font-weight-normal" data-name="LIRI Bot"
-                                    data-deployed="not available" data-repo="https://github.com/ajdlm/liri-node-app">
-                                    LIRI Bot</h4>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="mx-3 my-4">
-                                <img class="portfolio-picture img-fluid w-100" src="assets/images/cl-hangman.jpg"
-                                    alt="profile picture" data-name="Command Line Hangman" data-deployed="not available"
-                                    data-repo="https://github.com/ajdlm/command-line-hangman" />
-                            </div>
-
-                            <div class="carousel-caption container-fluid" style="left: 0; bottom: 0;">
-                                <h4 class="portfolio-title py-3 mx-3 bg-info font-weight-normal"
-                                    data-name="Command Line Hangman" data-deployed="not available"
-                                    data-repo="https://github.com/ajdlm/command-line-hangman">Command Line Hangman</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="mx-3 my-4">
-                                <img class="portfolio-picture img-fluid w-100" src="assets/images/bamazon.jpg"
-                                    alt="profile picture" data-name="Bamazon" data-deployed="not available"
-                                    data-repo="https://github.com/ajdlm/bamazon" />
-                            </div>
-
-                            <div class="carousel-caption container-fluid" style="left: 0; bottom: 0;">
-                                <h4 class="portfolio-title py-3 mx-3 bg-info font-weight-normal" data-name="Bamazon"
-                                    data-deployed="not available" data-repo="https://github.com/ajdlm/bamazon">Bamazon
-                                </h4>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="mx-3 my-4">
-                                <div>
-                                    <img class="portfolio-picture img-fluid w-100" src="assets/images/friend-finder.jpg"
-                                        alt="profile picture" data-name="Friend Finder"
-                                        data-deployed="https://cryptic-sands-48131.herokuapp.com/"
-                                        data-repo="https://github.com/ajdlm/FriendFinder" />
-
-                                    <div class="carousel-caption container-fluid" style="left: 0; bottom: 0;">
-                                        <h4 class="portfolio-title py-3 mx-3 bg-info font-weight-normal"
-                                            data-name="Friend Finder"
-                                            data-deployed="https://cryptic-sands-48131.herokuapp.com/"
-                                            data-repo="https://github.com/ajdlm/FriendFinder">Friend Finder</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mb-4">
-                        <div class="col-md-6">
-                            <div class="mx-3 my-4">
-                                <img class="portfolio-picture img-fluid w-100" src="assets/images/eat-da-burger.jpg"
-                                    alt="profile picture" data-name="Eat-da-Burger!" data-deployed="https://aqueous-bastion-44141.herokuapp.com/"
-                                    data-repo="https://github.com/ajdlm/burger" />
-                            </div>
-
-                            <div class="carousel-caption container-fluid" style="left: 0; bottom: 0;">
-                                <h4 class="portfolio-title py-3 mx-3 bg-info font-weight-normal" data-name="Eat-da-Burger!"
-                                    data-deployed="https://aqueous-bastion-44141.herokuapp.com/" data-repo="https://github.com/ajdlm/burger">Eat-da-Burger!
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <nav
+        class="navbar navbar-expand-md navbar-dark border-bottom border-dark bg-white p-0"
+      >
+        <div id="headerContainer" class="container px-0">
+          <div class="navbar-brand m-0 bg-info p-3">
+            <h2 id="brandText" class="text-white mb-0">
+              Antonio de las Morenas
+            </h2>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#pageLinks"
+            aria-controls="pageLinks"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="pageLinks">
+            <ul class="navbar-nav ml-md-auto py-2 py-md-0">
+              <li class="nav-item ml-auto">
+                <a
+                  class="nav-link text-primary py-0 pr-2 my-2"
+                  href="index.html"
+                  ><i class="fas fa-home"></i>
+                  <p class="aboutFont d-none">About</p>
+                  <span
+                    class="pr-3 d-inline border-right border-dark"
+                    style="border-width: 1px !important;"
+                  ></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-primary py-0 px-2 my-2"
+                  href="portfolio.html"
+                  ><i class="fas fa-folder-open"></i>
+                  <p class="portfolioFont d-none">Portfolio</p>
+                  <span
+                    class="pr-3 d-inline border-right border-dark"
+                    style="border-width: 1px !important;"
+                  ></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-primary py-0 px-2 my-2"
+                  href="contact.html"
+                  ><i class="fas fa-phone"></i>
+                  <p class="contactFont d-none mb-0">Contact</p>
+                  <span
+                    class="pr-3 d-inline border-right border-dark"
+                    style="border-width: 1px !important;"
+                  ></span>
+                </a>
+              </li>
+              <li class="nav-item mr-auto">
+                <a
+                  class="nav-link text-primary py-0 pr-0 pl-2 my-2"
+                  href="assets/delasMorenas_Antonio_Resume.pdf"
+                  target="_blank"
+                  ><i class="fas fa-file"></i>
+                  <p class="resumeFont d-none mb-0">Resume</p>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+
+      <div class="container bg-white">
+        <div class="row mt-4 mb-5">
+          <div id="mainArea" class="col-md-12 border border-secondary">
+            <h2
+              class="text-info mx-3 py-4 mb-3 border-bottom border-secondary"
+              style="border-width: 3px !important;"
+            >
+              Portfolio
+            </h2>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mx-3 my-4">
+                  <img
+                    class="portfolio-picture img-fluid w-100"
+                    src="assets/images/star-wars-hangman.jpg"
+                    alt="profile picture"
+                    data-name="Star Wars Hangman"
+                    data-deployed="https://ajdlm.github.io/star-wars-hangman/"
+                    data-repo="https://github.com/ajdlm/star-wars-hangman"
+                  />
+                </div>
+
+                <div
+                  class="carousel-caption container-fluid"
+                  style="left: 0; bottom: 0;"
+                >
+                  <h4
+                    class="py-3 mx-3 bg-info font-weight-normal portfolio-title"
+                    data-name="Star Wars Hangman"
+                    data-deployed="https://ajdlm.github.io/star-wars-hangman/"
+                    data-repo="https://github.com/ajdlm/star-wars-hangman"
+                  >
+                    Star Wars Hangman
+                  </h4>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="mx-3 my-4">
+                  <div>
+                    <img
+                      class="portfolio-picture img-fluid w-100"
+                      src="assets/images/fullmetal-alchemist-rpg.jpg"
+                      alt="profile picture"
+                      data-name="Fullmetal Alchemist RPG"
+                      data-deployed="https://ajdlm.github.io/fma-rpg-battle/"
+                      data-repo="https://github.com/ajdlm/fma-rpg-battle"
+                    />
+
+                    <div
+                      class="carousel-caption container-fluid"
+                      style="left: 0; bottom: 0;"
+                    >
+                      <h4
+                        class="portfolio-title py-3 mx-3 bg-info font-weight-normal"
+                        data-name="Fullmetal Alchemist RPG"
+                        data-deployed="https://ajdlm.github.io/fma-rpg-battle/"
+                        data-repo="https://github.com/ajdlm/fma-rpg-battle"
+                      >
+                        Fullmetal Alchemist RPG
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mx-3 my-4">
+                  <img
+                    class="portfolio-picture img-fluid w-100"
+                    src="assets/images/edgar-the-peaceable.jpg"
+                    alt="profile picture"
+                    data-name="Anglo-Saxon Trivia Quiz"
+                    data-deployed="https://ajdlm.github.io/anglo-saxon-trivia/"
+                    data-repo="https://github.com/ajdlm/anglo-saxon-trivia"
+                  />
+                </div>
+
+                <div
+                  class="carousel-caption container-fluid"
+                  style="left: 0; bottom: 0;"
+                >
+                  <h4
+                    class="portfolio-title py-3 mx-3 bg-info font-weight-normal"
+                    data-name="Anglo-Saxon Trivia Quiz"
+                    data-deployed="https://ajdlm.github.io/anglo-saxon-trivia/"
+                    data-repo="https://github.com/ajdlm/anglo-saxon-trivia"
+                  >
+                    Anglo-Saxon Trivia Quiz
+                  </h4>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="mx-3 my-4">
+                  <div>
+                    <img
+                      class="portfolio-picture img-fluid w-100"
+                      src="assets/images/blade-runner.jpg"
+                      alt="profile picture"
+                      data-name="Sci-Fi Movie Gif Search"
+                      data-deployed="https://ajdlm.github.io/sci-fi-movie-gifs/"
+                      data-repo="https://github.com/ajdlm/sci-fi-movie-gifs"
+                    />
+
+                    <div
+                      class="carousel-caption container-fluid"
+                      style="left: 0; bottom: 0;"
+                    >
+                      <h4
+                        class="portfolio-title py-3 mx-3 bg-info font-weight-normal"
+                        data-name="Sci-Fi Movie Gif Search"
+                        data-deployed="https://ajdlm.github.io/sci-fi-movie-gifs/"
+                        data-repo="https://github.com/ajdlm/sci-fi-movie-gifs"
+                      >
+                        Sci-Fi Movie Gif Search
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mx-3 my-4">
+                  <img
+                    class="portfolio-picture img-fluid w-100"
+                    src="assets/images/rps-multiplayer.jpg"
+                    alt="profile picture"
+                    data-name="Rock, Paper, Scissors Online"
+                    data-deployed="https://ajdlm.github.io/rps-online/"
+                    data-repo="https://github.com/ajdlm/rps-online"
+                  />
+                </div>
+
+                <div
+                  class="carousel-caption container-fluid"
+                  style="left: 0; bottom: 0;"
+                >
+                  <h4
+                    class="portfolio-title py-3 mx-3 bg-info font-weight-normal"
+                    data-name="Rock, Paper, Scissors Online"
+                    data-deployed="https://ajdlm.github.io/rps-online/"
+                    data-repo="https://github.com/ajdlm/rps-online"
+                  >
+                    RPS Online
+                  </h4>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="mx-3 my-4">
+                  <img
+                    class="portfolio-picture img-fluid w-100"
+                    src="assets/images/food-mood.jpg"
+                    alt="profile picture"
+                    data-name="FoodMood"
+                    data-deployed="https://ajdlm.github.io/FoodMood/"
+                    data-repo="https://github.com/ajdlm/FoodMood"
+                  />
+                </div>
+
+                <div
+                  class="carousel-caption container-fluid"
+                  style="left: 0; bottom: 0;"
+                >
+                  <h4
+                    class="portfolio-title py-3 mx-3 bg-info font-weight-normal"
+                    data-name="FoodMood"
+                    data-deployed="https://ajdlm.github.io/Food-Mood/"
+                    data-repo="https://github.com/ajdlm/Food-Mood"
+                  >
+                    FoodMood
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mx-3 my-4">
+                  <img
+                    class="portfolio-picture img-fluid w-100"
+                    src="assets/images/liri-bot.jpg"
+                    alt="profile picture"
+                    data-name="LIRI Bot"
+                    data-deployed="not available"
+                    data-repo="https://github.com/ajdlm/liri-node-app"
+                  />
+                </div>
+
+                <div
+                  class="carousel-caption container-fluid"
+                  style="left: 0; bottom: 0;"
+                >
+                  <h4
+                    class="portfolio-title py-3 mx-3 bg-info font-weight-normal"
+                    data-name="LIRI Bot"
+                    data-deployed="not available"
+                    data-repo="https://github.com/ajdlm/liri-node-app"
+                  >
+                    LIRI Bot
+                  </h4>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="mx-3 my-4">
+                  <img
+                    class="portfolio-picture img-fluid w-100"
+                    src="assets/images/cl-hangman.jpg"
+                    alt="profile picture"
+                    data-name="Command Line Hangman"
+                    data-deployed="not available"
+                    data-repo="https://github.com/ajdlm/command-line-hangman"
+                  />
+                </div>
+
+                <div
+                  class="carousel-caption container-fluid"
+                  style="left: 0; bottom: 0;"
+                >
+                  <h4
+                    class="portfolio-title py-3 mx-3 bg-info font-weight-normal"
+                    data-name="Command Line Hangman"
+                    data-deployed="not available"
+                    data-repo="https://github.com/ajdlm/command-line-hangman"
+                  >
+                    Command Line Hangman
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="mx-3 my-4">
+                  <img
+                    class="portfolio-picture img-fluid w-100"
+                    src="assets/images/bamazon.jpg"
+                    alt="profile picture"
+                    data-name="Bamazon"
+                    data-deployed="not available"
+                    data-repo="https://github.com/ajdlm/bamazon"
+                  />
+                </div>
+
+                <div
+                  class="carousel-caption container-fluid"
+                  style="left: 0; bottom: 0;"
+                >
+                  <h4
+                    class="portfolio-title py-3 mx-3 bg-info font-weight-normal"
+                    data-name="Bamazon"
+                    data-deployed="not available"
+                    data-repo="https://github.com/ajdlm/bamazon"
+                  >
+                    Bamazon
+                  </h4>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="mx-3 my-4">
+                  <div>
+                    <img
+                      class="portfolio-picture img-fluid w-100"
+                      src="assets/images/friend-finder.jpg"
+                      alt="profile picture"
+                      data-name="Friend Finder"
+                      data-deployed="https://cryptic-sands-48131.herokuapp.com/"
+                      data-repo="https://github.com/ajdlm/FriendFinder"
+                    />
+
+                    <div
+                      class="carousel-caption container-fluid"
+                      style="left: 0; bottom: 0;"
+                    >
+                      <h4
+                        class="portfolio-title py-3 mx-3 bg-info font-weight-normal"
+                        data-name="Friend Finder"
+                        data-deployed="https://cryptic-sands-48131.herokuapp.com/"
+                        data-repo="https://github.com/ajdlm/FriendFinder"
+                      >
+                        Friend Finder
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-md-6">
+                <div class="mx-3 my-4">
+                  <img
+                    class="portfolio-picture img-fluid w-100"
+                    src="assets/images/eat-da-burger.jpg"
+                    alt="profile picture"
+                    data-name="Eat-da-Burger!"
+                    data-deployed="https://aqueous-bastion-44141.herokuapp.com/"
+                    data-repo="https://github.com/ajdlm/burger"
+                  />
+                </div>
+
+                <div
+                  class="carousel-caption container-fluid"
+                  style="left: 0; bottom: 0;"
+                >
+                  <h4
+                    class="portfolio-title py-3 mx-3 bg-info font-weight-normal"
+                    data-name="Eat-da-Burger!"
+                    data-deployed="https://aqueous-bastion-44141.herokuapp.com/"
+                    data-repo="https://github.com/ajdlm/burger"
+                  >
+                    Eat-da-Burger!
+                  </h4>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="mx-3 my-4">
+                  <img
+                    class="portfolio-picture img-fluid w-100"
+                    src="assets/images/live-big.png"
+                    alt="profile picture"
+                    data-name="Live Big"
+                    data-deployed="https://theymightbegiants.herokuapp.com/"
+                    data-repo="https://github.com/mattomjoe/TheyMightBeGiants"
+                  />
+                </div>
+
+                <div
+                  class="carousel-caption container-fluid"
+                  style="left: 0; bottom: 0;"
+                >
+                  <h4
+                    class="portfolio-title py-3 mx-3 bg-info font-weight-normal"
+                    data-name="Live Big"
+                    data-deployed="https://theymightbegiants.herokuapp.com/"
+                    data-repo="https://github.com/mattomjoe/TheyMightBeGiants"
+                  >
+                    Live Big
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="modal" id="project-info" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header bg-info text-white border-dark">
-                    <h4 class="modal-title font-weight-normal" id="dynamic-title"></h4>
-                    <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
+    <div
+      class="modal"
+      id="project-info"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white border-dark">
+            <h4 class="modal-title font-weight-normal" id="dynamic-title"></h4>
+            <button
+              type="button"
+              class="close text-white"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
 
-                <div class="modal-body" id="dynamic-description"></div>
+          <div class="modal-body" id="dynamic-description"></div>
 
-                <div class="modal-footer border-dark" id="project-info-footer">
-                    <button type="button" class="btn text-white bg-info popupClose" data-dismiss="modal">Close</button>
-                </div>
-            </div>
+          <div class="modal-footer border-dark" id="project-info-footer">
+            <button
+              type="button"
+              class="btn text-white bg-info popupClose"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
         </div>
+      </div>
     </div>
 
-    <footer class="footer mt-auto py-4 bg-danger border-top border-info text-center"
-        style="border-width: 8px !important;">
-        <a href="https://github.com/ajdlm" target="_blank">
-            <img src="assets/images/GitHub-Mark-Light.png" alt="GitHub" class="mr-2 mb-2 linkImage">
-        </a>
+    <footer
+      class="footer mt-auto py-4 bg-danger border-top border-info text-center"
+      style="border-width: 8px !important;"
+    >
+      <a href="https://github.com/ajdlm" target="_blank">
+        <img
+          src="assets/images/GitHub-Mark-Light.png"
+          alt="GitHub"
+          class="mr-2 mb-2 linkImage"
+        />
+      </a>
 
-        <a href="https://www.linkedin.com/in/antoniodelasmorenas/" target="_blank">
-            <img src="assets/images/LinkedIn-Logo.png" alt="LinkedIn" height="32px" class="mb-2 linkImage">
-        </a>
+      <a
+        href="https://www.linkedin.com/in/antoniodelasmorenas/"
+        target="_blank"
+      >
+        <img
+          src="assets/images/LinkedIn-Logo.png"
+          alt="LinkedIn"
+          height="32px"
+          class="mb-2 linkImage"
+        />
+      </a>
 
-        <p class="text-center text-secondary m-0 pt-2" style="font-size: 11px;">© 2019 Antonio de las Morenas</p>
+      <p class="text-center text-secondary m-0 pt-2" style="font-size: 11px;">
+        © 2019 Antonio de las Morenas
+      </p>
     </footer>
-</body>
-
+  </body>
 </html>
