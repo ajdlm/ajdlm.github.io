@@ -1,104 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8">
+    <title>Antonio de las Morenas</title>
 
-  <title>Antonio de las Morenas</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1" />
 
-  <meta name="viewport" content="width-device-width, initial-scale=1">
+    <!--Linking our Bootstrap .css file, which is modified by a .scss file of the same name (custom.scss)-->
+    <link rel="stylesheet" href="custom.css" />
 
-  <!--Linking our Bootstrap .css file, which is modified by a .scss file of the same name (custom.scss)-->
-  <link rel="stylesheet" href="custom.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
+    />
 
-  <link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="assets/javascript/portfolio.js"></script>
+  </head>
 
-  <script src="assets/javascript/portfolio.js"></script>
-</head>
-
-<body class="d-flex flex-column">
-  <div id="not-footer">
-    <nav class="navbar navbar-expand-md navbar-dark border-bottom border-dark bg-white p-0">
-      <div id="headerContainer" class="container px-0">
-        <div class="navbar-brand m-0 bg-info p-3">
-          <h2 id="brandText" class="text-white mb-0">Antonio de las Morenas</h2>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#pageLinks"
-          aria-controls="pageLinks" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="pageLinks">
-          <ul class="navbar-nav ml-md-auto py-1 py-sm-2 py-md-0">
-            <li class="nav-item ml-auto">
-              <a class="nav-link text-primary py-0 pr-2 my-2" href="index.html"><i class="fas fa-home"></i>
-                <p class="aboutFont d-none">About</p><span class="pr-3 d-inline border-right border-dark"
-                  style="border-width: 1px !important;"></span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary py-0 px-2 my-2" href="portfolio.html"><i class="fas fa-folder-open"></i>
-                <p class="portfolioFont d-none">Portfolio</p><span
-                  class="pr-3 d-inline border-right border-dark" style="border-width: 1px !important;"></span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-primary py-0 px-2 my-2" href="contact.html"><i class="fas fa-phone"></i>
-                <p class="contactFont d-none mb-0">Contact</p><span
-                  class="pr-3 d-inline border-right border-dark" style="border-width: 1px !important;"></span>
-              </a>
-            </li>
-            <li class="nav-item mr-auto">
-              <a class="nav-link text-primary pr-0 pl-2" href="assets/delasMorenas_Antonio_Resume.pdf" target="_blank"><i
-                  class="fas fa-file"></i>
-                <p class="resumeFont d-none mb-0">Resume</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div class="container bg-white">
-      <div class="row mt-4 mb-5">
-        <div id="mainArea" class="col-md-12 border border-secondary">
-
-          <h2 class="text-info mx-3 py-4 border-bottom border-secondary" style="border-width: 3px !important;">About Me
-          </h2>
-
-          <div class="float-left ml-3 mr-4 my-4">
-            <img id="profPic" src="assets/images/profile-picture.jpg" alt="profile picture" />
+  <body class="d-flex flex-column">
+    <div id="not-footer">
+      <nav
+        class="navbar navbar-expand-md navbar-dark border-bottom border-dark bg-white p-0"
+      >
+        <div id="headerContainer" class="container px-0">
+          <div class="navbar-brand m-0 bg-info p-3">
+            <h2 id="brandText" class="text-white mb-0">
+              Antonio de las Morenas
+            </h2>
           </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#pageLinks"
+            aria-controls="pageLinks"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="pageLinks">
+            <ul class="navbar-nav ml-md-auto py-1 py-sm-2 py-md-0">
+              <li class="nav-item ml-auto">
+                <a
+                  class="nav-link text-primary py-0 pr-2 my-2"
+                  href="index.html"
+                  ><i class="fas fa-home"></i>
+                  <p class="aboutFont d-none">About</p>
+                  <span
+                    class="pr-3 d-inline border-right border-dark"
+                    style="border-width: 1px !important;"
+                  ></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-primary py-0 px-2 my-2"
+                  href="portfolio.html"
+                  ><i class="fas fa-folder-open"></i>
+                  <p class="portfolioFont d-none">Portfolio</p>
+                  <span
+                    class="pr-3 d-inline border-right border-dark"
+                    style="border-width: 1px !important;"
+                  ></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-primary py-0 px-2 my-2"
+                  href="contact.html"
+                  ><i class="fas fa-phone"></i>
+                  <p class="contactFont d-none mb-0">Contact</p>
+                  <span
+                    class="pr-3 d-inline border-right border-dark"
+                    style="border-width: 1px !important;"
+                  ></span>
+                </a>
+              </li>
+              <li class="nav-item mr-auto">
+                <a
+                  class="nav-link text-primary pr-0 pl-2"
+                  href="assets/delasMorenas_Antonio_Resume.pdf"
+                  target="_blank"
+                  ><i class="fas fa-file"></i>
+                  <p class="resumeFont d-none mb-0">Resume</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-          <p id="summaryText" class="text-primary mx-3 pb-3 my-4" style="line-height: 2;">Front-end Web Developer with a background in ESL.
-            Educated at the University of Minnesota with skills in HTML, CSS, JavaScript and jQuery. Can speak, read and
-            write Spanish well, and have strengths in creativity, written communication and logical problem-solving.
-            Passionate about planning and building interesting web applications and finding efficient and elegant
-            solutions for difficult issues. Can leverage my experience teaching grammatical structure to help with
-            explaining the mechanics of code to other team members.</p>
+      <div class="container bg-white">
+        <div class="row mt-4 mb-5">
+          <div id="mainArea" class="col-md-12 border border-secondary">
+            <h2
+              class="text-info mx-3 py-4 border-bottom border-secondary"
+              style="border-width: 3px !important;"
+            >
+              About Me
+            </h2>
+
+            <div class="float-left ml-3 mr-4 my-4">
+              <img
+                id="profPic"
+                src="assets/images/profile-picture.jpg"
+                alt="profile picture"
+              />
+            </div>
+
+            <p
+              id="summaryText"
+              class="text-primary mx-3 pb-3 my-4"
+              style="line-height: 2;"
+            >
+              Full-stack Web Developer with a background in ESL. Educated at the
+              University of Minnesota with skills in HTML, CSS, Bootstrap 4,
+              Handlebars.js, JavaScript, jQuery, Node.js, Express.js, MySQL,
+              Sequelize, MongoDB and Mongoose. Can speak, read and write Spanish
+              well, and have strengths in creativity, written communication and
+              logical problem-solving. Passionate about planning and building
+              interesting web applications and finding efficient and elegant
+              solutions for difficult issues. Can leverage my experience
+              teaching grammatical structure to help with explaining the
+              mechanics of code to other team members.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <footer class="footer mt-auto py-4 bg-danger border-top border-info text-center"
-    style="border-width: 8px !important;">
-    <a href="https://github.com/ajdlm" target="_blank">
-      <img src="assets/images/GitHub-Mark-Light.png" alt="GitHub" class="mr-2 mb-2 linkImage">
-    </a>
+    <footer
+      class="footer mt-auto py-4 bg-danger border-top border-info text-center"
+      style="border-width: 8px !important;"
+    >
+      <a href="https://github.com/ajdlm" target="_blank">
+        <img
+          src="assets/images/GitHub-Mark-Light.png"
+          alt="GitHub"
+          class="mr-2 mb-2 linkImage"
+        />
+      </a>
 
-    <a href="https://www.linkedin.com/in/antoniodelasmorenas/" target="_blank">
-      <img src="assets/images/LinkedIn-Logo.png" alt="LinkedIn" height="32px" class="mb-2 linkImage">
-    </a>
+      <a
+        href="https://www.linkedin.com/in/antoniodelasmorenas/"
+        target="_blank"
+      >
+        <img
+          src="assets/images/LinkedIn-Logo.png"
+          alt="LinkedIn"
+          height="32px"
+          class="mb-2 linkImage"
+        />
+      </a>
 
-    <p class="text-center text-secondary m-0 pt-2" style="font-size: 11px;">© 2019 Antonio de las Morenas</p>
-  </footer>
-</body>
-
+      <p class="text-center text-secondary m-0 pt-2" style="font-size: 11px;">
+        © 2019 Antonio de las Morenas
+      </p>
+    </footer>
+  </body>
 </html>
