@@ -1,133 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
 
     <title>Contact</title>
 
-    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <meta name="viewport" content="width-device-width, initial-scale=1" />
 
     <!--Linking our Bootstrap .css file, which is modified by a .scss file of the same name (custom.scss)-->
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="custom.css" />
 
-    <link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
+    />
 
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <script src="assets/javascript/portfolio.js"></script>
-</head>
+  </head>
 
-<body class="d-flex flex-column">
+  <body class="d-flex flex-column">
     <div id="not-footer">
-        <nav class="navbar navbar-expand-md navbar-dark border-bottom border-dark bg-white p-0">
-            <div id="headerContainer" class="container px-0">
-                <div class="navbar-brand m-0 bg-info p-3">
-                    <h2 id="brandText" class="text-white mb-0">Antonio de las Morenas</h2>
-                </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#pageLinks"
-                    aria-controls="pageLinks" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="pageLinks">
-                    <ul class="navbar-nav ml-md-auto py-2 py-md-0">
-                        <li class="nav-item ml-auto">
-                            <a class="nav-link text-primary py-0 pr-2 my-2" href="index.html"><i
-                                    class="fas fa-home"></i>
-                                <p class="aboutFont d-none">About</p><span
-                                    class="pr-3 d-inline border-right border-dark"
-                                    style="border-width: 1px !important;"></span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary py-0 px-2 my-2" href="portfolio.html"><i
-                                    class="fas fa-folder-open"></i>
-                                <p class="portfolioFont d-none">Portfolio</p><span
-                                    class="pr-3 d-inline border-right border-dark"
-                                    style="border-width: 1px !important;"></span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary py-0 px-2 my-2" href="contact.html"><i
-                                    class="fas fa-phone"></i>
-                                <p class="contactFont d-none mb-0">Contact</p><span
-                                    class="pr-3 d-inline border-right border-dark"
-                                    style="border-width: 1px !important;"></span>
-                            </a>
-                        </li>
-                        <li class="nav-item mr-auto">
-                            <a class="nav-link text-primary pr-0 pl-2" href="assets/delasMorenas_Antonio_Resume.pdf"
-                                target="_blank"><i class="fas fa-file"></i>
-                                <p class="resumeFont d-none mb-0">Resume</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <div class="container bg-white">
-            <div id="mainArea" class="row mt-4 mb-5 border border-secondary">
-                <div class="col-md-7 col-lg-8">
-                    <h2 class="text-info mx-3 py-4 mb-4 border-bottom border-secondary"
-                        style="border-width: 3px !important;">Contact
-                    </h2>
-
-                    <form id="entireForm" class="text-primary px-3 pt-1 pb-4" style="font-size: 18px; line-height: 1;">
-                        <div class="form-group pb-1">
-                            <label for="inputName">Name</label>
-                            <input type="text" class="form-control" id="inputName" placeholder="John Smith">
-                        </div>
-
-                        <div class="form-group pb-1">
-                            <label for="inputEmail">Email</label>
-                            <input type="text" class="form-control" id="inputEmail" placeholder="example@gmail.com">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="inputMessage">Message</label>
-                            <textarea class="form-control" id="inputMessage" rows="9"></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-info rounded-0 my-2 px-4"
-                            style="font-size: 18px;">Submit</button>
-                    </form>
-                </div>
-
-                <div class="col-md-5 col-lg-4 pr-0">
-                    <div id="contactStuff" class="my-4 mr-4 px-4 py-4">
-                        <h6 class="text-info">Email</h6>
-                        <a href="mailto: a.j.delasmorenas@gmail.com">a.j.delasmorenas@gmail.com</a>
-
-                        <h6 class="text-info pt-4">Telephone</h6>
-                        <p class="text-primary mb-4">774-534-0815</p>
-
-                        <a href="https://www.linkedin.com/in/antoniodelasmorenas/" target="_blank">
-                            <i id="contactLinkedIn" class="fab fa-linkedin text-info linkImage"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+      <nav
+        class="navbar navbar-expand-md navbar-dark border-bottom border-dark bg-white p-0"
+      >
+        <div id="headerContainer" class="container px-0">
+          <div class="navbar-brand m-0 bg-info p-3">
+            <h2 id="brandText" class="text-white mb-0">
+              Antonio de las Morenas
+            </h2>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#pageLinks"
+            aria-controls="pageLinks"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="pageLinks">
+            <ul class="navbar-nav ml-md-auto py-2 py-md-0">
+              <li class="nav-item ml-auto">
+                <a
+                  class="nav-link text-primary py-0 pr-2 my-2"
+                  href="index.html"
+                  ><i class="fas fa-home"></i>
+                  <p class="aboutFont d-none">About</p>
+                  <span
+                    class="pr-3 d-inline border-right border-dark"
+                    style="border-width: 1px !important;"
+                  ></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-primary py-0 px-2 my-2"
+                  href="portfolio.html"
+                  ><i class="fas fa-folder-open"></i>
+                  <p class="portfolioFont d-none">Portfolio</p>
+                  <span
+                    class="pr-3 d-inline border-right border-dark"
+                    style="border-width: 1px !important;"
+                  ></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-primary py-0 px-2 my-2"
+                  href="contact.html"
+                  ><i class="fas fa-phone"></i>
+                  <p class="contactFont d-none mb-0">Contact</p>
+                  <span
+                    class="pr-3 d-inline border-right border-dark"
+                    style="border-width: 1px !important;"
+                  ></span>
+                </a>
+              </li>
+              <li class="nav-item mr-auto">
+                <a
+                  class="nav-link text-primary pr-0 pl-2"
+                  href="assets/delasMorenas_Antonio_Resume.pdf"
+                  target="_blank"
+                  ><i class="fas fa-file"></i>
+                  <p class="resumeFont d-none mb-0">Resume</p>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+
+      <div class="container bg-white">
+        <div id="mainArea" class="row mt-4 mb-5 border border-secondary">
+          <div class="col-md-7 col-lg-8">
+            <h2
+              class="text-info mx-3 py-4 mb-4 border-bottom border-secondary"
+              style="border-width: 3px !important;"
+            >
+              Contact
+            </h2>
+
+            <form
+              id="entireForm"
+              class="text-primary px-3 pt-1 pb-4"
+              style="font-size: 18px; line-height: 1;"
+            >
+              <div class="form-group pb-1">
+                <label for="inputName">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputName"
+                  placeholder="John Smith"
+                />
+              </div>
+
+              <div class="form-group pb-1">
+                <label for="inputEmail">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputEmail"
+                  placeholder="example@gmail.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="inputMessage">Message</label>
+                <textarea
+                  class="form-control"
+                  id="inputMessage"
+                  rows="9"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-info rounded-0 my-2 px-4"
+                style="font-size: 18px;"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+
+          <div class="col-md-5 col-lg-4 pr-0">
+            <div id="contactStuff" class="my-4 mr-4 px-4 py-4">
+              <h6 class="text-info">Email</h6>
+              <a href="mailto: a.j.delasmorenas@gmail.com"
+                >a.j.delasmorenas@gmail.com</a
+              >
+
+              <h6 class="text-info pt-4">Telephone</h6>
+              <p class="text-primary mb-4">774-534-0815</p>
+
+              <a
+                href="https://www.linkedin.com/in/antoniodelasmorenas/"
+                target="_blank"
+              >
+                <i
+                  id="contactLinkedIn"
+                  class="fab fa-linkedin text-info linkImage"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <footer class="footer mt-auto py-4 bg-danger border-top border-info text-center"
-        style="border-width: 8px !important;">
-        <a href="https://github.com/ajdlm" target="_blank">
-            <img src="assets/images/GitHub-Mark-Light.png" alt="GitHub" class="mr-2 mb-2 linkImage">
-        </a>
+    <footer
+      class="footer mt-auto py-4 bg-danger border-top border-info text-center"
+      style="border-width: 8px !important;"
+    >
+      <a href="https://github.com/ajdlm" target="_blank">
+        <img
+          src="assets/images/GitHub-Mark-Light.png"
+          alt="GitHub"
+          height="32px"
+          class="mr-2 mb-2 linkImage"
+        />
+      </a>
 
-        <a href="https://www.linkedin.com/in/antoniodelasmorenas/" target="_blank">
-            <img src="assets/images/LinkedIn-Logo.png" alt="LinkedIn" height="32px" class="mb-2 linkImage">
-        </a>
+      <a
+        href="https://www.linkedin.com/in/antoniodelasmorenas/"
+        target="_blank"
+      >
+        <img
+          src="assets/images/LinkedIn-Logo.png"
+          alt="LinkedIn"
+          height="32px"
+          class="mb-2 linkImage"
+        />
+      </a>
 
-        <p class="text-center text-secondary m-0 pt-2" style="font-size: 11px;">© 2019 Antonio de las Morenas</p>
+      <p class="text-center text-secondary m-0 pt-2" style="font-size: 11px;">
+        © 2019 Antonio de las Morenas
+      </p>
     </footer>
-</body>
-
+  </body>
 </html>
