@@ -60,7 +60,19 @@ body {
     }
 }
 
+@media screen and (max-width: 991px) {
+    .portfolio-title {
+        padding: 12px 0 !important;
+        margin-bottom: 10px !important;
+    }
+}
+
 @media screen and (max-width: 767px) {
+    .portfolio-title {
+        padding: 16px 0 !important;
+        margin-bottom: 12px !important;
+    }
+
     #headerContainer {
         min-width: 100%;
         margin: 0 !important;
