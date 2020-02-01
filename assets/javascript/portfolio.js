@@ -1,10 +1,10 @@
 $(document).ready(function () {
     function displayModal(x, y, z) {
-        var projName = x;
+        const projName = x;
 
-        var projDeployed = y;
+        const projDeployed = y;
 
-        var projRepo = z;
+        const projRepo = z;
 
         $("#dynamic-title").text(projName);
 
