@@ -116,6 +116,8 @@
               id="entireForm"
               class="text-primary px-3 pt-1 pb-4"
               style="font-size: 18px; line-height: 1;"
+              action="https://formspree.io/mknrornj"
+              method="POST"
             >
               <div class="form-group pb-1">
                 <label for="inputName">Name</label>
@@ -123,6 +125,7 @@
                   type="text"
                   class="form-control"
                   id="inputName"
+                  name="Name"
                   placeholder="John Smith"
                 />
               </div>
@@ -133,6 +136,7 @@
                   type="text"
                   class="form-control"
                   id="inputEmail"
+                  name="Email"
                   placeholder="example@gmail.com"
                 />
               </div>
@@ -142,9 +146,14 @@
                 <textarea
                   class="form-control"
                   id="inputMessage"
+                  name="Message"
                   rows="9"
                 ></textarea>
               </div>
+
+              <input type="hidden" name="_subject" value="Portfolio Contact Message" />
+
+              <input type="text" name="_gotcha" style="display: none" />
 
               <button
                 type="submit"
