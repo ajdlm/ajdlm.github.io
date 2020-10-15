@@ -1,10 +1,12 @@
 $(document).ready(function () {
-    function displayModal(x, y, z) {
-        const projName = x;
+    function displayModal(w, x, y, z) {
+        const projName = w;
 
-        const projDeployed = y;
+        const projDeployed = x;
 
-        const projRepo = z;
+        const projRepo = y;
+
+        const techList = z;
 
         $("#dynamic-title").text(projName);
 
@@ -13,7 +15,7 @@ $(document).ready(function () {
         }
 
         else {
-            $("#dynamic-description").html("<strong>Deployed App:</strong> <a href='" + projDeployed + "' target='_blank'>" + projDeployed + "</a><br /><strong>GitHub Repository:</strong> <a href='" + projRepo + "' target='_blank'>" + projRepo + "</a>");
+            $("#dynamic-description").html("<strong>Deployed App:</strong> <a href='" + projDeployed + "' target='_blank'>" + projDeployed + "</a><br /><strong>GitHub Repository:</strong> <a href='" + projRepo + "' target='_blank'>" + projRepo + "</a><br /><strong>Technologies Used:</strong> " + techList);
         };
 
         $("#project-info").modal("show");
@@ -22,7 +24,7 @@ $(document).ready(function () {
     $(".portfolio-picture, .portfolio-title").on("click", function (event) {
         console.log(this);
 
-        displayModal($(this).attr("data-name"), $(this).attr("data-deployed"), $(this).attr("data-repo"));
+        displayModal($(this).attr("data-name"), $(this).attr("data-deployed"), $(this).attr("data-repo"), $(this).attr("data-techs"));
     });
 
     $(".fa-home").mouseover(function () {
