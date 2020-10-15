@@ -28,6 +28,10 @@ body {
     font-size: 17px;
 }
 
+#dynamic-description {
+    line-height: 1.85;
+}
+
 .navbar-nav {
     display: flex;
     flex-flow: row nowrap;

@@ -1,77 +1,93 @@
 $(document).ready(function () {
-    function displayModal(w, x, y, z) {
-        const projName = w;
+  function displayModal(
+    projName,
+    projDeployed,
+    projRepo,
+    techList,
+    projGif,
+    projDesc
+  ) {
+    $("#dynamic-title").text(projName);
+    
+    $("#dynamic-description").html(
+      "<strong>Deployed App:</strong> <a href='" +
+        projDeployed +
+        "' target='_blank'>" +
+        projDeployed +
+        "</a><br /><strong>GitHub Repository:</strong> <a href='" +
+        projRepo +
+        "' target='_blank'>" +
+        projRepo +
+        "</a><p><strong>Technologies Used:</strong> " +
+        techList +
+        "</p><img src='" +
+        projGif +
+        "' style='max-width: 100%' /><p></p><p>" +
+        projDesc +
+        "</p>"
+    );
 
-        const projDeployed = x;
+    $("#project-info").modal("show");
+  }
 
-        const projRepo = y;
+  $(".portfolio-picture, .portfolio-title").on("click", function (event) {
+    console.log(this);
 
-        const techList = z;
+    displayModal(
+      $(this).attr("data-name"),
+      $(this).attr("data-deployed"),
+      $(this).attr("data-repo"),
+      $(this).attr("data-techs"),
+      $(this).attr("data-gif"),
+      $(this).attr("data-desc")
+    );
+  });
 
-        $("#dynamic-title").text(projName);
+  $(".fa-home").mouseover(function () {
+    $(".fa-home").addClass("d-none");
 
-        if (projDeployed === "not available") {
-            $("#dynamic-description").html("<strong>GitHub Repository:</strong> <a href='" + projRepo + "' target='_blank'>" + projRepo + "</a>");
-        }
+    $(".aboutFont").removeClass("d-none").addClass("d-inline");
+  });
 
-        else {
-            $("#dynamic-description").html("<strong>Deployed App:</strong> <a href='" + projDeployed + "' target='_blank'>" + projDeployed + "</a><br /><strong>GitHub Repository:</strong> <a href='" + projRepo + "' target='_blank'>" + projRepo + "</a><br /><strong>Technologies Used:</strong> " + techList);
-        };
+  $(".aboutFont").mouseout(function () {
+    $(".aboutFont").removeClass("d-inline").addClass("d-none");
 
-        $("#project-info").modal("show");
-    }
+    $(".fa-home").removeClass("d-none");
+  });
 
-    $(".portfolio-picture, .portfolio-title").on("click", function (event) {
-        console.log(this);
+  $(".fa-folder-open").mouseover(function () {
+    $(".fa-folder-open").addClass("d-none");
 
-        displayModal($(this).attr("data-name"), $(this).attr("data-deployed"), $(this).attr("data-repo"), $(this).attr("data-techs"));
-    });
+    $(".portfolioFont").removeClass("d-none").addClass("d-inline");
+  });
 
-    $(".fa-home").mouseover(function () {
-        $(".fa-home").addClass("d-none");
+  $(".portfolioFont").mouseout(function () {
+    $(".portfolioFont").removeClass("d-inline").addClass("d-none");
 
-        $(".aboutFont").removeClass("d-none").addClass("d-inline");
-    });
+    $(".fa-folder-open").removeClass("d-none");
+  });
 
-    $(".aboutFont").mouseout(function () {
-        $(".aboutFont").removeClass("d-inline").addClass("d-none");
+  $(".fa-phone").mouseover(function () {
+    $(".fa-phone").addClass("d-none");
 
-        $(".fa-home").removeClass("d-none");
-    });
+    $(".contactFont").removeClass("d-none").addClass("d-inline");
+  });
 
-    $(".fa-folder-open").mouseover(function () {
-        $(".fa-folder-open").addClass("d-none");
+  $(".contactFont").mouseout(function () {
+    $(".contactFont").removeClass("d-inline").addClass("d-none");
 
-        $(".portfolioFont").removeClass("d-none").addClass("d-inline");
-    });
+    $(".fa-phone").removeClass("d-none");
+  });
 
-    $(".portfolioFont").mouseout(function () {
-        $(".portfolioFont").removeClass("d-inline").addClass("d-none");
+  $(".fa-file").mouseover(function () {
+    $(".fa-file").addClass("d-none");
 
-        $(".fa-folder-open").removeClass("d-none");
-    });
+    $(".resumeFont").removeClass("d-none");
+  });
 
-    $(".fa-phone").mouseover(function () {
-        $(".fa-phone").addClass("d-none");
+  $(".resumeFont").mouseout(function () {
+    $(".resumeFont").addClass("d-none");
 
-        $(".contactFont").removeClass("d-none").addClass("d-inline");
-    });
-
-    $(".contactFont").mouseout(function () {
-        $(".contactFont").removeClass("d-inline").addClass("d-none");
-
-        $(".fa-phone").removeClass("d-none");
-    });
-
-    $(".fa-file").mouseover(function () {
-        $(".fa-file").addClass("d-none");
-
-        $(".resumeFont").removeClass("d-none");
-    });
-
-    $(".resumeFont").mouseout(function () {
-        $(".resumeFont").addClass("d-none");
-
-        $(".fa-file").removeClass("d-none");
-    });
+    $(".fa-file").removeClass("d-none");
+  });
 });
