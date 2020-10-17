@@ -22,7 +22,7 @@ $(document).ready(function () {
         techList +
         "</p><img src='" +
         projGif +
-        "' style='max-width: 100%; border: .75px solid #777777' /><p></p><p>" +
+        "' style='max-width: 100%; border: .75px solid #cccccc' /><p></p><p>" +
         projDesc +
         "</p>"
     );
