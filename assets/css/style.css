@@ -1,183 +1,201 @@
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    background-image: url("../images/background.png");
+  background-image: url("../images/background.png");
 }
 
 #not-footer {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 #contactStuff {
-    background-image: url("../images/small-bg.png");
-    height: calc(100% - 48px);
+  background-image: url("../images/small-bg.png");
+  height: calc(100% - 48px);
 }
 
 #inputMessage {
-    resize: none;
+  resize: none;
 }
 
 #contactLinkedIn {
-    font-size: 35px;
+  font-size: 35px;
 }
 
-#summaryText, #contactStuff, #contactStuff > h6 {
-    font-size: 17px;
+#summaryText,
+#contactStuff,
+#contactStuff > h6 {
+  font-size: 17px;
 }
 
 #dynamic-description {
-    line-height: 1.85;
+  line-height: 1.85;
 }
 
 .navbar-nav {
-    display: flex;
-    flex-flow: row nowrap;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
-.modal-content, .modal-header {
-    border: none !important;
+.modal-content,
+.modal-header {
+  border: none !important;
 }
 
-.portfolio-picture, .portfolio-title {
-    cursor: pointer;
+.portfolio-picture,
+.portfolio-title {
+  cursor: pointer;
+}
+
+.grow-animation {
+  transform: scale(1.035);
 }
 
 .portfolio-title {
-    margin-bottom: 12px !important;
+  margin-bottom: 12px !important;
 }
 
 .linkImage {
-    cursor: pointer;
-    transition: all .2s ease-in-out;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .linkImage:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 1200px) {
-    .container {
-        max-width: 960px;
-    }
+  .container {
+    max-width: 960px;
+  }
 }
 
 @media screen and (max-width: 991px) {
-    .portfolio-title {
-        padding: 12px 0 !important;
-        margin-bottom: 10px !important;
-    }
+  .portfolio-title {
+    padding: 12px 0 !important;
+    margin-bottom: 10px !important;
+  }
 }
 
 @media screen and (max-width: 767px) {
-    .portfolio-title {
-        padding: 16px 0 !important;
-        margin-bottom: 12px !important;
-    }
+  .portfolio-title {
+    padding: 16px 0 !important;
+    margin-bottom: 12px !important;
+  }
 
-    #headerContainer {
-        min-width: 100%;
-        margin: 0 !important;
-        background: #4aaaa5;
-    }
+  #headerContainer {
+    min-width: 100%;
+    margin: 0 !important;
+    background: #4aaaa5;
+  }
 
-    #contactStuff {
-        margin: 0 31px 32px 16px !important;
-    }
+  #contactStuff {
+    margin: 0 31px 32px 16px !important;
+  }
 
-    #entireForm {
-        padding-bottom: 20px !important;
-    }
+  #entireForm {
+    padding-bottom: 20px !important;
+  }
 
-    #contactLinkedIn {
-        padding-bottom: 12px;
-    }
+  #contactLinkedIn {
+    padding-bottom: 12px;
+  }
 
-    .navbar-toggler {
-        margin-right: 16px;
-    }
+  .navbar-toggler {
+    margin-right: 16px;
+  }
 
-    .navbar-brand {
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .navbar-brand {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .navbar-nav {
-        background: #666666;
-        width: 100%;
-    }
+  .navbar-nav {
+    background: #666666;
+    width: 100%;
+  }
 
-    .nav-link {
-        color: white !important;
-        font-size: 20px;
-    }
+  .nav-link {
+    color: white !important;
+    font-size: 20px;
+  }
 
-    .nav-link > i:hover, .nav-link > p:hover {
-        color: white !important;
-    }
+  .nav-link > i:hover,
+  .nav-link > p:hover {
+    color: white !important;
+  }
 
-    .nav-link > p:hover {
-        font-size: 16px;
-        padding-top: 4px !important;
-    }
+  .nav-link > p:hover {
+    font-size: 16px;
+    padding-top: 4px !important;
+  }
 }
 
 @media screen and (max-width: 575px) {
-    #brandText, h2 {
-        font-size: 1.75rem;
-    }
+  #brandText,
+  h2 {
+    font-size: 1.75rem;
+  }
 
-    #mainArea {
-        border-right: none !important;
-        border-left: none !important;
-    }
+  #mainArea {
+    border-right: none !important;
+    border-left: none !important;
+  }
 }
 
 @media screen and (max-width: 447px) {
-    #brandText, h2 {
-        font-size: 1.3rem;
-    }
+  #brandText,
+  h2 {
+    font-size: 1.3rem;
+  }
 
-    h4 {
-        font-size: 1.2rem;
-    }
+  h4 {
+    font-size: 1.2rem;
+  }
 
-    .navbar-nav {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-    }
+  .navbar-nav {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
 }
 
 @media screen and (max-width: 374px) {
-    #entireForm, input, #contactStuff, #contactStuff > h6 {
-        font-size: 16px !important;
-    }
+  #entireForm,
+  input,
+  #contactStuff,
+  #contactStuff > h6 {
+    font-size: 16px !important;
+  }
 
-    #summaryText {
-        font-size: 15px;
-    }
+  #summaryText {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 359px) {
-    #profPic {
-        max-width: 160px;
-    }
+  #profPic {
+    max-width: 160px;
+  }
 
-    #entireForm, input, #contactStuff, #contactStuff > h6 {
-        font-size: 15px !important;
-    }
+  #entireForm,
+  input,
+  #contactStuff,
+  #contactStuff > h6 {
+    font-size: 15px !important;
+  }
 
-    #summaryText {
-        font-size: 14px;
-    }
+  #summaryText {
+    font-size: 14px;
+  }
 
-    #brandText, h2 {
-        font-size: 1.07rem;
-    }
+  #brandText,
+  h2 {
+    font-size: 1.07rem;
+  }
 
-    h4 {
-        font-size: 1rem;
-    }
+  h4 {
+    font-size: 1rem;
+  }
 }

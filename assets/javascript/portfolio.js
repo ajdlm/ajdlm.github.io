@@ -8,7 +8,7 @@ $(document).ready(function () {
     projDesc
   ) {
     $("#dynamic-title").text(projName);
-    
+
     $("#dynamic-description").html(
       "<strong>Deployed App:</strong> <a href='" +
         projDeployed +
@@ -41,6 +41,22 @@ $(document).ready(function () {
       $(this).attr("data-gif"),
       $(this).attr("data-desc")
     );
+  });
+
+  $(".portfolio-picture, .carousel-caption").mouseover(function () {
+    $(this).addClass("grow-animation");
+
+    $(this)
+      .siblings(".portfolio-picture, .carousel-caption")
+      .addClass("grow-animation");
+  });
+
+  $(".portfolio-picture, .carousel-caption").mouseout(function () {
+    $(this).removeClass("grow-animation");
+
+    $(this)
+      .siblings(".portfolio-picture, .carousel-caption")
+      .removeClass("grow-animation");
   });
 
   $(".fa-home").mouseover(function () {
